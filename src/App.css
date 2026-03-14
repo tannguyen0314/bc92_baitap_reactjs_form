@@ -1,0 +1,111 @@
+
+.booking-container {
+    background-image: url('../img/bgmovie.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    padding: 40px 0;
+    font-family: 'fontGame', sans-serif;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.85); 
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.screen {
+    width: 90%;
+    height: 15px;
+    background: #ff9f5f;
+    margin: 20px auto 50px auto;
+    box-shadow: 0 15px 20px rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+.seat-map {
+    margin: 0 auto;
+    display: inline-block; 
+}
+
+.firstChar {
+    color: #f7e100;
+    font-size: 24px;
+    width: 40px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.rowNumber {
+    color: #f7e100;
+    font-size: 20px;
+    width: 45px;
+    height: 35px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.ghe {
+    border: 2px solid orange;
+    width: 35px;
+    height: 30px;
+    font-size: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s; 
+}
+
+.ghe:hover {
+    background: #eee;
+    transform: scale(1.1); 
+}
+
+.gheDuocChon {
+    background: #b33a3a !important; 
+    border: 2px solid #b33a3a !important;
+    cursor: no-drop !important;
+}
+
+.gheDangChon {
+    background: #6dee6d !important; 
+    border: 2px solid #6dee6d !important;
+    animation: pulse 1s infinite; 
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.result-table {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+.result-table table {
+    width: 100%;
+    background: white;
+    color: black;
+    border-collapse: collapse;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.result-table th {
+    background: #f8f9fa;
+}
